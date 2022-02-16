@@ -2,7 +2,79 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './style.css';
 
+const login_header = <h2>Login:</h2>
+
+/* Start HTML */
+
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
+  <HomePage />,
   document.getElementById('root')
 );
+
+ReactDOM.render(<NameForm />, document.getElementById('login'));
+
+
+function HomePage() {
+  return (
+    <div className="HomePage"> 
+      <div className = "typewriter">
+        <h1>Welcome, Bruins.</h1>
+      </div>
+
+      <h2>Login:</h2> 
+      
+    </div> 
+    )
+}
+
+class NameForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: ''};
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
+  handleSubmit(event) {
+    alert('A name was submitted: ' + this.state.value);
+    event.preventDefault();
+  }
+
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <label>
+          Name:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
+    );
+  }
+}
+
+class EssayForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: 'Please write an essay about your favorite DOM element.'
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
+  handleSubmit(event) {
+    alert('An essay was submitted: ' + this.state.value);
+    event.preventDefault();
+  }
+}

@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 /*--------------------------------------------------------------------- basic ---------------------------------------------------------------------*/
 body {
-    color: #666666;
+    color: #c6c6c6;
     font-size: 14px;
     font-family: 'poppins', sans-serif;
     line-height: 1.80857;
@@ -23,10 +23,12 @@ a {
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
+h1 {
+    text-align: center;
+}
 h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0;
     font-weight: normal;
-    position: relative;
     padding: 0 0 10px 0;
     font-weight: normal;
     line-height: normal;
@@ -37,6 +39,8 @@ h1 {
     font-size: 24px 
 }
 h2 {
+    text-align: center;
+    margin-top: 10%;
     font-size: 22px 
 }
 h3 {
@@ -934,3 +938,29 @@ a.article, a.article:hover {
     color: #fff;
     font-weight: 500;
 }
+/* ------------------------------------------------------------ TYPING ANIMATION -----------------------------------------------------------------------------*/  
+  /* DEMO-SPECIFIC STYLES */
+  .typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
