@@ -942,7 +942,6 @@ a.article, a.article:hover {
   /* DEMO-SPECIFIC STYLES */
   .typewriter h1 {
     color: #fff;
-    font-family: monospace;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
@@ -964,3 +963,23 @@ a.article, a.article:hover {
     from, to { border-color: transparent }
     50% { border-color: orange }
   }
+/*---------------------------------------------------------------FORMS--------------------------------------------------------------------------------------*/
+.login-form {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;   
+}
+
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;   
+}

@@ -19,7 +19,7 @@ function HomePage() {
     <div className="HomePage"> 
       <div className = "typewriter">
         <div>
-          <h1>Welcome, Bruins.</h1>
+          <h1>Bruinfessions.</h1>
         </div>
       </div>
 
@@ -35,15 +35,11 @@ function HomePage() {
           Password:
           </label>
           <input type="password" name="Password"/>
-          <input type="submit" value="Submit" onClick={redirectForum()}/>
+          <input type="submit" value="Submit" />
         </form>
       </div>
     </div> 
     )
-}
-
-function redirectForum() {
-  /* This function should be programmed to redirect to forum.js*/
 }
 
 class NameForm extends React.Component {
