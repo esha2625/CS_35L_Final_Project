@@ -38,6 +38,10 @@ function HomePage() {
           <input type="submit" value="Submit" />
         </form>
       </div>
+
+      <div className="footer">
+          Footer
+      </div>
     </div> 
     )
 }

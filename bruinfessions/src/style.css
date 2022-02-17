@@ -644,18 +644,6 @@ header .container-fluid {
 }
 /** end Our Client **/
 /*--------------------------------------------------------------------- footer ---------------------------------------------------------------------*/
-.footer {
-    background: #d8b00f;
-    padding-top:90px;
-    margin-top: 90px;
-}
-.footer h2 {
-    color: #000;
-    font-size: 40px;
-    font-weight: 500;
-    padding-left: 223px;
-    padding-bottom: 0px;
-}
 .white {
     color: #fff;
     font-weight: 500;
@@ -982,4 +970,17 @@ input[type=password] {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;   
+}
+
+/*--------------------------------------------------------------------FOOTER---------------------------------------------------------------------------------*/
+.footer {
+    position: absolute;
+    bottom: 0px;
+    width: 97.5%;  
+    background-color: gray;  
+    color: white;  
+    text-align: center;  
+  }
+.HomePage {
+    min-height: 100vh;
 }

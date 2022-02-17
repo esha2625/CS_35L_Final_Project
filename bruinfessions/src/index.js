@@ -38,6 +38,10 @@ function HomePage() {
           <input type="submit" value="Submit" onClick={redirectForum()}/>
         </form>
       </div>
+
+      <div className="footer">
+        Create An Account
+      </div>
     </div> 
     )
 }
